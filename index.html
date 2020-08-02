@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/pokeball.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+    <!--load all icons -->
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html"><img src="images/pkm.png" alt="Logo Pokémon" id="logo"></a>
+            <div class="nav-search">
+                <input type="text" placeholder="Nombre / Número (1-809)" id="text-search">
+                <i class="fas fa-search" id="search"></i>
+            </div>
+            <span>Pokémon aleatorio<i class="fas fa-random" id='random'></i></span>
+        </div>
+    </nav>
+    <div class="cuerpo">
+        <div class="container">
+            <div id="info">
+                <h3>Puedes buscar un pokémon ingresando su nombre o su número (1-809).</h3>
+            </div>
+            <div id="error">
+                <h3>ERROR: Debe ingresar el nombre del pokémon o el número (1-809).</h3>
+            </div>
+            <div class="datos-pokemon">
+                <h2 id="name"> </h2>
+                <img id="img-pkm">
+                <h3>Type</h3>
+
+                <ul id="type"></ul>
+                <h3>Stats</h3>
+
+                <div class="base"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="text-footer">
+                Desarrollado por <b>Sergio Vargas</b>.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
