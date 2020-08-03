@@ -138,11 +138,18 @@ window.addEventListener('load', () => {
                     errorMessage();
                 }else if (isNaN(busqueda)) {
                     id_actual = buscarPkm(pokedx, busqueda);
-                    if(id_actual == undefined){
-                        errorMessage();
-                    }else{
-                        infoPkm();
+                    for(var x in pokedx){
+                        if(pokedx[x].id == id_actual && (busqueda == pokedx[x].name.english || busqueda == pokedx[x].name.english.toLowerCase() || busqueda == pokedx[x].name.english.toUpperCase() )){
+                            id_actual = buscarPkm(pokedx, busqueda);
+                            input.value = '';
+                            break;
+                        }else if(id_actual == undefined){
+                            errorMessage();
+                        }else{
+                            errorMessage();
+                        }
                     }
+                    
                 } else if (parseInt(busqueda, 10) < 1 || parseInt(busqueda, 10) > 809) {
                     errorMessage();
                 } else {
@@ -158,11 +165,18 @@ window.addEventListener('load', () => {
                         errorMessage();
                     }else if (isNaN(busqueda)) {
                         id_actual = buscarPkm(pokedx, busqueda);
-                        if(id_actual == undefined){
-                            errorMessage();
-                        }else{
-                            infoPkm();
+                        for(var x in pokedx){
+                            if(pokedx[x].id == id_actual && (busqueda == pokedx[x].name.english || busqueda == pokedx[x].name.english.toLowerCase() || busqueda == pokedx[x].name.english.toUpperCase() )){
+                                id_actual = buscarPkm(pokedx, busqueda);
+                                input.value = '';
+                                break;
+                            }else if(id_actual == undefined){
+                                errorMessage();
+                            }else{
+                                errorMessage();
+                            }
                         }
+                        
                     } else if (parseInt(busqueda, 10) < 1 || parseInt(busqueda, 10) > 809) {
                         errorMessage();
                     } else {
