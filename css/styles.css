@@ -12,7 +12,7 @@ nav{
     
 }
 nav .container{
-    width: 85%;
+    width: 60%;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -90,7 +90,7 @@ nav #random:hover{
 }
 
 #info{
-    width: 80%;
+    width: 60%;
     height: 100px;
     margin: 20px auto;
     background-color: #6890F0;
@@ -101,7 +101,7 @@ nav #random:hover{
 }
 #error{
     display: none;
-    width: 80%;
+    width: 60%;
     height: 100px;
     margin: 20px auto;
     background-color: #D67873;
@@ -247,6 +247,14 @@ footer .container .text-footer{
     color: white;
     font-family: 'Verdana';
 }
+@media (max-width:1300px){
+    nav .container{
+        width: 85%;
+    }
+    #error, #info {
+        width: 70%;
+    }
+}
 
 @media (max-width:800px){
     nav{
@@ -286,3 +294,5 @@ footer .container .text-footer{
         margin: 0 40px;
     }
 }
+
+
