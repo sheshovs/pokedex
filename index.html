@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Pokédex</title>
 
     <link rel="icon" type="image/vnd.microsoft.icon" href="images/pokeball.ico">
@@ -34,6 +34,7 @@
             <div id="error">
                 <h3>ERROR: Debe ingresar el nombre del pokémon o el número (1-809).</h3>
             </div>
+            <span class="prev"><i class="fas fa-chevron-left"></i></span>
             <div class="datos-pokemon">
                 <h2 id="name"> </h2>
                 <img id="img-pkm">
@@ -43,6 +44,11 @@
                 <h3>Stats</h3>
 
                 <div class="base"></div>
+            </div>
+            <span class="next"><i class="fas fa-chevron-right"></i></span>
+            <div class="arrows">
+                <span id="prev"><i class="fas fa-chevron-left"></i></span>
+                <span id="next"><i class="fas fa-chevron-right"></i></span>
             </div>
         </div>
     </div>

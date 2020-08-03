@@ -85,8 +85,8 @@ nav #random:hover{
     height: 100%;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 #info{
@@ -127,6 +127,31 @@ nav #random:hover{
     padding:40px;
     flex-direction: column;
     align-items: center;
+}
+.prev .fas, .next .fas{
+    font-size: 64px;
+    cursor: pointer;
+}
+.prev{
+    margin-right: 40px;
+    display: none;
+}
+.next{
+    margin-left: 40px;
+    display: none;
+}
+.prev:hover .fas,.next:hover .fas{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+#prev .fas, #next .fas{
+    font-size: 64px;
+    cursor: pointer;
+}
+#prev,#next{ 
+    display: none;
+}
+#prev:hover .fas,#next:hover .fas{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 #name{
     font-size: 24px;
@@ -235,25 +260,29 @@ footer .container .text-footer{
     }
 }
 
-@media (max-width:450px){
-    #info,#error{
-        height: 140px;
-    }
-    .datos-pokemon{
-        width: 300px;
-    }
-}
-
-@media (max-width:330px){
+@media (max-width:525px){
     #info,#error{
         height: 180px;
     }
     .datos-pokemon{
-        width: 250px;
-        height: 680px;
+        width: 300px;
+        height: 650px;
+        padding: 20px;
     }
     #img-pkm{
         width: 100px;
         height: 100px;
+    }
+    .cuerpo .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .arrows{
+        width: 100%;
+        text-align: center;
+        height: 100px;
+    }
+    #prev,#next{ 
+        margin: 0 40px;
     }
 }
